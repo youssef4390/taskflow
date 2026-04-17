@@ -51,3 +51,8 @@
   border-radius: 50%;
   flex-shrink: 0;
 }
+
+  .active {
+    background-color: #d0eaff;
+    color: #1976d2;
+  }
