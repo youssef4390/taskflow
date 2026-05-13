@@ -12,6 +12,20 @@
 	padding: 2rem;
 }
 
+.backBtn {
+	background: #1B8C3E;
+	color: white;
+	border: none;
+	padding: 0.65rem 1rem;
+	border-radius: 8px;
+	cursor: pointer;
+	margin-bottom: 1rem;
+}
+
+.backBtn:hover {
+	background: #157a33;
+}
+
 .header {
 	display: flex;
 	gap: 1rem;

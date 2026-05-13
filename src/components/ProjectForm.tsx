@@ -1,4 +1,4 @@
-import { useState } from 'react'; 
+import { useState, type FormEvent } from 'react'; 
 import styles from './ProjectForm.module.css'; 
   
 interface ProjectFormProps { 
@@ -16,8 +16,11 @@ export default function ProjectForm({
   const [name, setName] = useState(initialName); 
   const [color, setColor] = useState(initialColor); 
   
-  function handleSubmit(e: React.FormEvent) { 
-    onSubmit(name, color);  //BUG 
+  function handleSubmit(e: FormEvent<HTMLFormElement>) { 
+    e.preventDefault();
+    const trimmedName = name.trim();
+    if (!trimmedName) return;
+    onSubmit(trimmedName, color); 
   } 
   
   return ( 

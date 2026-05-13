@@ -71,3 +71,30 @@ export default defineConfig([
   },
 ])
 ```
+
+## Démarrage du projet
+
+1. Installer les dépendances:
+
+```bash
+npm install
+```
+
+2. Lancer l'API locale:
+
+```bash
+npm run backend
+```
+
+3. Lancer l'application React:
+
+```bash
+npm run dev
+```
+
+4. Se connecter avec un compte de test:
+
+- Email: `alice@example.com`
+- Mot de passe: `password`
+
+Le backend local est fourni par `db.json` avec des utilisateurs, projets et colonnes de démonstration.
